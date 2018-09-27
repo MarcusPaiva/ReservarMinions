@@ -39,7 +39,8 @@ gem 'jbuilder', '~> 2.5'
 
 group :production do
   gem 'bundler'
-  gem 'pg'
+  #gem 'pg'
+  gem 'mysql', '~> 2.9', '>= 2.9.1'
 end
 
 group :development, :test do
