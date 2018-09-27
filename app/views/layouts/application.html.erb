@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Minions</title>
-    <%= csrf_meta_tags %>
+    <head>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+    </head>
+    <body>
+        <header><div id="header_image">
+            <img id="minions_header" src="https://thumbor.forbes.com/thumbor/1280x868/https%3A%2F%2Fblogs-images.forbes.com%2Fmarkhughes%2Ffiles%2F2015%2F08%2FMINIONS-2.png">
+            </div>
+            <h1 id="title">Reserve aqui seu minion!</h1>
+            </header>
+        <div id="body">
+            <div id="minions_desc">
+                <article>Os minions já invadiram quase o mundo inteiro, agora falta sua casa e seu coração.</article>
+                <img src="https://vignette.wikia.nocookie.net/tayothelittlebus/images/9/97/Bob_minions_2015.png/revision/latest?cb=20150807182137">
+            </div>
+            <div id="minions_order"> <%= yield -%> </div>
+        </div>
+        <footer></footer>
+    </body>
 </html>

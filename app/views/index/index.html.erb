@@ -1,0 +1,7 @@
+<%= form_tag(index_index_path, :method => :post) do %>
+    <%= text_field_tag 'name', nil, placeholder: 'Seu nome completo' %>
+    <%= text_field_tag 'email', nil, placeholder: 'Email' %>
+    <%= text_field_tag 'address', nil, placeholder: 'Seu endereço' %>
+    <%= submit_tag("Reservar Minion!")  %>
+<% end %>
+<%= @status  %>
