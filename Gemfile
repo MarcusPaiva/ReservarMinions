@@ -38,7 +38,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  gem "pg"
+  gem 'bundler'
+  gem 'pg'
 end
 
 group :development, :test do
