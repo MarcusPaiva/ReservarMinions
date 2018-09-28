@@ -1456,3 +1456,11 @@ Processing by ApplicationController#index as HTML
 Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 191.162.7.196 at 2018-09-28 05:10:19 +0000
+Cannot render console from 191.162.7.196! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (158.8ms)
+Completed 200 OK in 174ms (Views: 166.0ms | ActiveRecord: 0.0ms)
+
+

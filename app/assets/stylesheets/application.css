@@ -59,6 +59,10 @@ h1{
 .minions{
     width: 10%;
 }
+.minions:hover{
+    transition-duration: 1s;
+    width: 14%;
+}
 
 label{
     display: block;
