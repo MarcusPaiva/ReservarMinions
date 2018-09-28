@@ -38,7 +38,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  gem 'pg'
+  #Nenhuma dessas duas gems está funcionando, devido a isso comentei para continuar o trabalho
+  #gem 'pg'
   #gem 'pg', '~> 0.18.4'
 end
 
