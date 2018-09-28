@@ -1,7 +1,12 @@
+Escolha seu minion:<br />
 <%= form_tag(reserved_path, :method => :post) do %>
-    <%= text_field_tag 'name', nil, placeholder: 'Seu nome completo', :required => true %>
-    <%= email_field_tag 'email', nil, placeholder: 'Email', :required => true %>
-    <%= text_field_tag 'address', nil, placeholder: 'Seu endereço', :required => true %>
-    <%= submit_tag("Reservar Minion!")  %>
+    <%= radio_button_tag 'minion', 'Kevin', :id => 'kevin', :required => true %> <%= image_tag("kevin.png", :alt => "kevin", :class => "minions") %>
+    <%= radio_button_tag 'minion', 'bob', :id => 'bob', :class => 'bob' %> <%= image_tag("bob.png", :alt => "bob", :class => "minions bob") %>
+    <%= radio_button_tag 'minion', 'stuart', :id => 'stuart', :class => 'stuart' %> <%= image_tag("stuart.png", :alt => "stuart", :class => "minions stuart") %>
+    
+    <%= label_tag 'name', 'Nome:' %> <%= text_field_tag 'name', nil, placeholder: 'Seu nome completo', :required => true %> 
+    <%= label_tag 'email', 'Email:' %> <%= email_field_tag 'email', nil, placeholder: 'seu@email.com', :required => true %> 
+    <%= label_tag 'address', 'Endereço:' %><%= text_field_tag 'address', nil, placeholder: 'Seu endereço', :required => true %> 
+    <div id="button_submit"><%= submit_tag("Reservar Minion!")  %></div>
 <% end %>
 <%= @status  %>

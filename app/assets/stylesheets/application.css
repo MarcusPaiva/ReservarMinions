@@ -21,17 +21,21 @@ body{
     width: 100%;
     color: #8B8989;
 }
+
 #header_image{
     width:30%;
     margin:0 auto;
 }
+
 h1{
     font-size: 245%;
     text-align: center;
 }
+
 #minions_header{
     width:100%;
 }
+
 #body{
     width: 90%;
     margin: 0 auto;
@@ -41,12 +45,47 @@ h1{
     float: left;
     text-align: center;
 }
+
 #minions_desc img{
     width: 20%;
 }
+
 #minions_order{
     width: 45%;
     float: right;
     border-left: solid 1px #D3D3D3;
     padding-left: 2%;
+}
+.minions{
+    width: 10%;
+}
+
+label{
+    display: block;
+    width: 35%;
+}
+
+input[type='text'],input[type='email']{
+    width: 100%;
+    border-radius: 10px 0px;
+}
+
+input[type='submit']{
+    width: 50%;
+    margin: 1% auto;
+    background-color:blue;
+    color:white;
+    border-radius: 15px;
+    border: solid 1px blue;
+    padding: 1%;
+}
+
+#button_submit{
+    text-align: center;
+}
+
+input[type='submit']:hover{
+    background-color:yellow;
+    color:blue;
+    transition-duration: 1s;
 }
